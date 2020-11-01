@@ -15,4 +15,5 @@ export const LOGOUT = 'LOGOUT';
 
 //45 Profile Reducer & Get Current Profile -- 1.11.20
 export const GET_PROFILE = 'GET_PROFILE';
+export const CLEAR_PROFILE = 'CLEAR_PROFILE';
 export const PROFILE_ERROR = 'PROFILE_ERROR'
