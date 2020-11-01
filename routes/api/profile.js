@@ -1,10 +1,15 @@
 // part 16 -Get Current User Profile
 const express = require("express");
+const request = require("request"); // part 23 inishilaze request !
+const config = require("config"); // part 23 inishilaze config !
+const axios = require('axios'); // part 23 inishilaze config !  ** after for fixed beacuse is Deprecated in May 2020
+// and after that we need to use "npm install axios"
 const router = express.Router();
 const auth = require("../../middleware/auth");
 const Profile = require("../../models/Profile");
 const User = require("../../models/User");
-const { check, validationResult } = require("express-validator");
+const { check, validationResult, body } = require("express-validator");
+const { response } = require("express");
 
 // @route  GET api/profile/me
 // @desc   Get current users profile
@@ -79,7 +84,7 @@ router.post(
     if (instagram) profileFields.social.instagram = instagram;
     try {
       let profile = await Profile.findOne({ user: req.user.id });
-    //  console.log('profile', profile)
+      //  console.log('profile', profile)
       if (profile) {
         //Update
         profile = await Profile.findOneAndUpdate(
@@ -118,9 +123,9 @@ router.get("/", async (req, res) => {
 // @Access Public
 router.get("/user/:user_id", async (req, res) => {
   try {
-    console.log(" req.params.user_id", req.params.user_id)
-   // const test = await Profile.find({});
-   // console.log('test', test)
+    console.log(" req.params.user_id", req.params.user_id);
+    // const test = await Profile.find({});
+    // console.log('test', test)
     const profile = await Profile.findOne({
       user: req.params.user_id,
     }).populate("user", ["name", "avatar"]);
@@ -183,7 +188,7 @@ router.put(
       from,
       to,
       current,
-      description
+      description,
     } = req.body;
 
     const newExp = {
@@ -193,17 +198,16 @@ router.put(
       from,
       to,
       current,
-      description
+      description,
     };
     try {
-     // console.log("req.user.id", req.user.id);
-      const profile = await Profile.findOne({ user:  req.user.id });
+      // console.log("req.user.id", req.user.id);
+      const profile = await Profile.findOne({ user: req.user.id });
       //console.log(profile);
       profile.experience.unshift(newExp);
       await profile.save();
       res.json(profile);
-    } 
-    catch (err) {
+    } catch (err) {
       console.error(err.message);
       res.status(500).send("server error");
     }
@@ -298,4 +302,60 @@ router.delete("/education/:edu_id", auth, async (req, res) => {
   }
 });
 
+// ---- Part 23 GET Github Repos For profile
+// יצרנו פרויקט חדש בהתחלה בגיטהאב בקישור הבא
+//https://github.com/settings/applications/
+//והעתקנו את המפתח שקיבלנו מגיטהאב לתוך ה- PACKETJSON לפני שכתבנו את התוכנית.
+
+// @route  GET api/profile/github/:username
+// @desc   Get user repos from github
+// @Access Public
+/*  the function is Deprecated !!! in the next code of of router.get i'll fix this 
+router.get("/github/:username", (req, res) => {
+  try {
+    const options = {
+      uri: `https://api.github.com/users/${
+        req.params.username
+      }/repos?per_page=5&sort=created:asc&client_id=${config.get(
+        "githubClientId"
+      )}&client_secret=${config.get("githubSecret")}`,
+  //    method: 'GET',
+    //  headers: {'user-agent':'node.js'}
+      const headers  ={
+        'user-agent': 'node.js',
+        Authorization: `token ${config.get('githubToken')}`
+      };
+    };
+    request(options,(err,response,body)=>{
+      if(error) console.error(error);
+      if(response.statusCode!=200){
+        res.status(404).json({msg:"No Github profile found."});
+
+      }
+      res.json(JSON.parse(body));
+    })
+  } catch (err) {
+    console.error(err.message);
+    res.status(500).send("server error");
+  }
+});
+*/
+
+router.get('/github/:username', async (req, res) => {
+  try {
+    const uri = encodeURI(
+      `https://api.github.com/users/${req.params.username}/repos?per_page=5&sort=created:asc`
+    );
+    const headers = {
+      'user-agent': 'node.js',
+      Authorization: `token ${config.get('githubToken')}`
+    };
+
+    const gitHubResponse = await axios.get(uri, { headers });
+    return res.json(gitHubResponse.data);
+  } catch (err) {
+    console.error(err.message);
+    return res.status(404).json({ msg: 'No Github profile found' });
+  }
+});
 module.exports = router;

@@ -8,11 +8,14 @@
     "start": "node server",
     "server": "nodemon server",
     "client": "npm start --prefix client",
-    "dev": "concurrently \" npm run server\" \" npm run client\""
+   
+    "dev": "concurrently \"npm run client\" \"npm run server\"",
+    "dev3": "concurrently \" npm run server\" \" npm run client\""
   },
   "author": "igal neeman",
   "license": "MIT",
   "dependencies": {
+    "axios": "^0.19.2",
     "bcryptjs": "^2.4.3",
     "config": "^3.3.1",
     "express": "^4.17.1",
