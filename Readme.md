@@ -15,7 +15,7 @@ Welcome to "MERN Stack Front To Back". In this Project i'l build an in depth ful
 
 Creating a build script, securing our keys and deploy to Heroku using Git.
 
-# UPDATE: The entire project was updated to use React Hooks, Async/Await and better overall code.
+## UPDATE: The entire project was updated to use React Hooks, Async/Await and better overall code.
 
 This is NOT an "Intro to React" or "Intro to Node" project. It is a practical hands on project for building an app using the incredible MERN stack. I do try and explain everything as I go so it is possible to follow without React/Node experience but it is recommended that you know at least the basics first.
 
@@ -34,7 +34,5 @@ This is NOT an "Intro to React" or "Intro to Node" project. It is a practical ha
 Who this project is for:
 * Anyone that wants to learn how to build and deploy a full stack MERN application
 
-## כותרת משנה או עליונה
-* סעיפים
-## דוגמא לתמונה
-![Logo](https://github.com/IgalNeeman/drushim/blob/master/src/picsjobs/TNOVA-EXAMPLE.jpg)
+
+![Logo](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DB1wDyQBBafQ&psig=AOvVaw3Klx6vfKb8MWIYzgkCPYzq&ust=1610012655496000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCPjmstaCh-4CFQAAAAAdAAAAABAD)
