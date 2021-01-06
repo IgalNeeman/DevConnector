@@ -25,7 +25,7 @@
 * npm i express express-validator bcryptjs config gravatar jsonwebbtoken mongoose request
 * npm i -D nodemon concurrently
  
-- ![#f03c15] `מכאן מתחיל תהליך בניית הקבצים בפרויקט`
+- ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) `מכאן מתחיל תהליך בניית הקבצים בפרויקט`
 
 ## c. Connecting To MongoDB Wit Mongoose:
  *  Create Folder DevConnector/config/
