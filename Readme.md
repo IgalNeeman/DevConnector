@@ -35,4 +35,4 @@ Who this project is for:
 * Anyone that wants to learn how to build and deploy a full stack MERN application
 
 
-![Logo](https://click.linksynergy.com/deeplink?id=JVFxdTr9V80&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fmern-stack-front-to-back%2F)
+![Logo](https://github.com/IgalNeeman/DevConnector/blob/master/welcome.jpg)
