@@ -1,22 +1,25 @@
-Welcome to # "MERN Stack Front To Back" #. In this course we will build an in depth full stack social network application using Node.js, Express, React, Redux and MongoDB along with ES6+. We will start with a blank text editor and end with a deployed full stack application. This course includes...
+# Full Stack Project - MERN Stack Front To Back.
+Welcome to "MERN Stack Front To Back". In this Project i'l build an in depth full stack social network application using Node.js, Express, React, Redux and MongoDB along with ES6+. We will start with a blank text editor and end with a deployed full stack application. 
 
-Building an extensive backend API with Node.js & Express
+# This project includes:
 
-Protecting routes/endpoints with JWT (JSON Web Tokens)
+* Building an extensive backend API with Node.js & Express
 
-Extensive API testing with Postman
+* Protecting routes/endpoints with JWT (JSON Web Tokens)
 
-Integrating React with our backend in an elegant way, creating a great workflow
+* Extensive API testing with Postman
 
-Building our frontend to work with the API
+* Integrating React with our backend in an elegant way, creating a great workflow
 
-Using Redux for app state management
+* Building our frontend to work with the API
 
-Creating reducers and actions for our resources
+* Using Redux for app state management
 
-Creating many container components that integrate with Redux
+* Creating reducers and actions for our resources
 
-Testing with the Redux Chrome extension
+* Creating many container components that integrate with Redux
+
+* Testing with the Redux Chrome extension
 
 ## כותרת משנה או עליונה
 * סעיפים
