@@ -1,29 +1,41 @@
 ## Full Stack project - MERN Stack Front To Back.
+## הסבר על הפרויקט בקצרה מה בוצע בכל שלב:
 
-* Building an extensive backend API with Node.js & Express
+
+# Section1: Environment & Setup:
+* מורידים POSTMAN בשביל לבצע בדיקות API
+* React Developer Tools כרום אקסטנשן בשביל לעשות בדיקות לריאקט
+* התקנה של תוסף לויזואל סטודיו Bracket Pair Colorizer שיסדר לי את הקוד קצת במחינת נראות
+* התקנת של תוסף נוסף לויזואל קוד ES7\React\Redux\GrashQL\React-neative snippets
+* Prettier - code formatter התקנה של
 
 
-Creating a build script, securing our keys and deploy to Heroku using Git.
+# Section2: 
+## a. Express & MongoDB Setup
+*  שלב ראשון נכנסים לאתר של https://MONGODB.com
+* נרשמים שם, ויוצרים יוזר ל דאטה בייס
+* מעתיקים את המחרוזת עם השם משתמש וסיסמה שלנו לדאטה בייס ושומרים אותה אצלנו לשימוש בעתיד בפרויקט
 
-## UPDATE: The entire project was updated to use React Hooks, Async/Await and better overall code.
 
-This is NOT an "Intro to React" or "Intro to Node" project. It is a practical hands on project for building an app using the incredible MERN stack. I do try and explain everything as I go so it is possible to follow without React/Node experience but it is recommended that you know at least the basics first.
-~ #c
-^ python
-## What you'll see in the project:
-* Build a full stack social network app with React, Redux, Node, Express & MongoDB
-* Create an extensive backend API with Express
-* Use Stateless JWT authentication practices
-* Integrate React with an Express backend in an elegant way
-* React Hooks, Async/Await & modern practices
-* Use Redux for state management
-* Deploy to Heroku with a postbuild script
-## Are there any course requirements or prerequisites?
-* A good understanding of JavaScript & ES6 Fundamentals
-* React & Node Basics
+## b. Install Dependencies & Basic Express Setup
+* שלב ראשון יוצרים קובץ .gitignore node_modules/
+* git init
+* npm init ויוצרים את כל החבילה של הפרויקט מגדירים אותו.
+# נבצע התקנות של חבילות בתוך הפרויקט שלנו:
+* npm i express express-validator bcryptjs config gravatar jsonwebbtoken mongoose request
+* npm i -D nodemon concurrently
 
-Who this project is for:
-* Anyone that wants to learn how to build and deploy a full stack MERN application
+
+## c. Connecting To MongoDB Wit Mongoose:
+ *  Create Folder DevConnector/config/
+ * https://github.com/IgalNeeman/DevConnector/blob/master/config/default.json הגדרה של קובץ הלוגין לדאטה בייס
+ * https://github.com/IgalNeeman/DevConnector/blob/master/config/db.js פונקציית הרשמה לדאטה בייס
+
+
+
+
+
+
 
 
 ![Logo](https://github.com/IgalNeeman/DevConnector/blob/master/welcome.jpg)
