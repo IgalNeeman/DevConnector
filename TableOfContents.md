@@ -31,12 +31,12 @@
  *  Create Folder DevConnector/config/
  * https://github.com/IgalNeeman/DevConnector/blob/master/config/default.json הגדרה של קובץ הלוגין לדאטה בייס
  * https://github.com/IgalNeeman/DevConnector/blob/master/config/db.js פונקציית הרשמה לדאטה בייס
+ * coonectDB(); -> https://github.com/IgalNeeman/DevConnector/blob/master/server.js OK
+
+ ## d. Routes Files With Express Router
+  * Create Folder DevConnector/routes/api/
+  * Create 4 files inside routes/api auth.js posts.js profile.js users.js 
+  * example in files: https://github.com/IgalNeeman/DevConnector/tree/master/routes/api 
 
 
 
-
-
-
-
-
-![Logo](https://github.com/IgalNeeman/DevConnector/blob/master/welcome.jpg)
