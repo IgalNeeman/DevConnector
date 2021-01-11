@@ -49,7 +49,7 @@ router.post(
           if (err) throw err;
           res.json({ token });
         }
-      );  // הוא מחק פה את ה res.send משהו בפרק  12
+      );  
     } 
     catch (err) {
       console.error(err.message);

@@ -38,5 +38,29 @@
   * Create 4 files inside routes/api auth.js posts.js profile.js users.js 
   * example in files: https://github.com/IgalNeeman/DevConnector/tree/master/routes/api 
 
+## 9. Creating The User Model
+* Create Folder models: DevConnector/models/
+* Create file User.js
+* https://github.com/IgalNeeman/DevConnector/blob/master/models/User.js
 
+## 10. Request & Body Validation
+* https://github.com/IgalNeeman/DevConnector/blob/master/routes/api/users.js
 
+## 11. User Registration
+* See if the user exists
+* Get users gravatar
+* Encrypt password
+* Return jsonwebtoken
+* https://github.com/IgalNeeman/DevConnector/blob/master/routes/api/users.js
+
+## 12. Implementing JWT
+* https://github.com/IgalNeeman/DevConnector/blob/master/routes/api/users.js
+
+## 13. Custom Auth Middleware & JWT Verify
+* Get token from header
+* Check if not token
+* Verify token
+* https://github.com/IgalNeeman/DevConnector/blob/master/middleware/auth.js
+* Get api/auth
+* Method: [GET] in Postman http://localhost:5000/api/auth 
+* https://github.com/IgalNeeman/DevConnector/blob/master/routes/api/auth.js
