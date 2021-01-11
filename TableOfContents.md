@@ -1,6 +1,4 @@
-## Full Stack project - MERN Stack Front To Back.
-
-## הסבר על הפרויקט בקצרה מה בוצע בכל שלב:
+# Full Stack project - MERN Stack Front To Back.
 
 # Section1: Environment & Setup:
 - מורידים POSTMAN בשביל לבצע בדיקות API
@@ -8,6 +6,7 @@
 - התקנה של תוסף לויזואל סטודיו Bracket Pair Colorizer שיסדר לי את הקוד קצת במחינת נראות
 - התקנת של תוסף נוסף לויזואל קוד ES7\React\Redux\GrashQL\React-neative snippets
 - Prettier - code formatter התקנה של
+
 
 # Section2: Express & MongoDB Setup
 - a שלב ראשון נכנסים לאתר של https://MONGODB.com
@@ -34,6 +33,7 @@
 - Create Folder DevConnector/routes/api/
 - Create 4 files inside routes/api auth.js posts.js profile.js users.js
 - example in files: https://github.com/IgalNeeman/DevConnector/tree/master/routes/api
+
 
 # Section3: User API Routes & JWT Authentication
 ## 9. Creating The User Model
@@ -64,12 +64,12 @@
 - https://github.com/IgalNeeman/DevConnector/blob/master/routes/api/auth.js
 
 ## 14. User Authentication / Login Route
-@route POST api/auth
-@desc Authentication user & get token
-@access Public
-
+- @route POST api/auth
+- @desc Authentication user & get token
+- @access Public
 - Invalid Credentials
 - https://github.com/IgalNeeman/DevConnector/blob/master/routes/api/auth.js
+
 
 # Section4: Profile API Routes
 ## 15. Creating The Profile Model
