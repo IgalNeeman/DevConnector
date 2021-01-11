@@ -10,9 +10,8 @@
 * Prettier - code formatter התקנה של
 
 
-# Section2: 
-## a. Express & MongoDB Setup
-*  שלב ראשון נכנסים לאתר של https://MONGODB.com
+# Section2: Express & MongoDB Setup
+* a  שלב ראשון נכנסים לאתר של https://MONGODB.com
 * נרשמים שם, ויוצרים יוזר ל דאטה בייס
 * מעתיקים את המחרוזת עם השם משתמש וסיסמה שלנו לדאטה בייס ושומרים אותה אצלנו לשימוש בעתיד בפרויקט
 
@@ -38,6 +37,7 @@
   * Create 4 files inside routes/api auth.js posts.js profile.js users.js 
   * example in files: https://github.com/IgalNeeman/DevConnector/tree/master/routes/api 
 
+# Section3: User API Routes & JWT Authentication
 ## 9. Creating The User Model
 * Create Folder models: DevConnector/models/
 * Create file User.js
@@ -64,3 +64,15 @@
 * Get api/auth
 * Method: [GET] in Postman http://localhost:5000/api/auth 
 * https://github.com/IgalNeeman/DevConnector/blob/master/routes/api/auth.js
+ 
+ ## 14. User Authentication / Login Route 
+ @route POST api/auth
+ @desc Authentication user & get token 
+ @access Public
+ * Invalid Credentials
+ * https://github.com/IgalNeeman/DevConnector/blob/master/routes/api/auth.js
+
+# Section4: Profile API Routes
+## 15. Creating The Profile Model
+* https://github.com/IgalNeeman/DevConnector/blob/master/models/profile.js
+
