@@ -26,7 +26,7 @@
  
 - ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) `מכאן מתחיל תהליך בניית הקבצים בפרויקט` ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+)
 
-## c. Connecting To MongoDB Wit Mongoose:
+## c. Connecting To MongoDB With Mongoose:
  *  Create Folder DevConnector/config/
  * https://github.com/IgalNeeman/DevConnector/blob/master/config/default.json הגדרה של קובץ הלוגין לדאטה בייס
  * https://github.com/IgalNeeman/DevConnector/blob/master/config/db.js פונקציית הרשמה לדאטה בייס
@@ -76,3 +76,6 @@
 ## 15. Creating The Profile Model
 * https://github.com/IgalNeeman/DevConnector/blob/master/models/profile.js
 
+
+
+[go](http://stackoverflow.com){:target="_blank" rel="noopener"}
