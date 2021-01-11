@@ -76,4 +76,3 @@
 - https://github.com/IgalNeeman/DevConnector/blob/master/models/profile.js
 
 
-[Google](https://google.com" target="_blank)
