@@ -92,3 +92,4 @@
 - https://github.com/IgalNeeman/DevConnector/blob/master/models/profile.js
 
 <a href="http://example.com" target="_blank">http://example.com</a>
+<p>Open link in a new window or tab: <a href="https://www.w3schools.com" target="_blank">Visit W3Schools!</a></p>
