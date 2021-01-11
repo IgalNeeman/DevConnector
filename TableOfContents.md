@@ -91,4 +91,4 @@
 
 - https://github.com/IgalNeeman/DevConnector/blob/master/models/profile.js
 
-[go](http://stackoverflow.com){:target="\_blank"}.
+<a href="http://example.com" target="_blank">http://example.com</a>
