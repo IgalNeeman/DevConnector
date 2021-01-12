@@ -1,4 +1,5 @@
 //PART 15 Creating The Profile Model
+
 const mongoose = require("mongoose");
 const ProfileSchema = new mongoose.Schema({
   user: {
@@ -48,5 +49,7 @@ const ProfileSchema = new mongoose.Schema({
   },
   date: { type: Date, default: Date.now }
 });
+// 12.1.2021 .model is a copy of mongoose.Schema: https://mongoosejs.com/docs/models.html 
+//ה- מודל הוא העתק של סכימה לפי הדוקומנטציה ולכן לפני שימוש במודל חייבים ליצור אובייקט עם כל הפרמטים שאנחנו רוצים שיהיה שם
 
 module.exports = Profile = mongoose.model("profile", ProfileSchema);

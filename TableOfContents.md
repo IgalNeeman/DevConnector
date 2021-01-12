@@ -75,4 +75,8 @@
 ## 15. Creating The Profile Model
 - https://github.com/IgalNeeman/DevConnector/blob/master/models/profile.js
 
-
+## 16. Get Current User Profile
+* @route Get api/profile/me
+* @desc Get current users profile
+* @access Private
+* https://github.com/IgalNeeman/DevConnector/blob/master/routes/api/profile.js
