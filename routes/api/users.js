@@ -5,8 +5,9 @@ const gravatar = require("gravatar");
 const bcrypt = require("bcryptjs");
 const { check, validationResult } = require("express-validator"); // "/check"
 const config = require("config");
-
 const jwt = require("jsonwebtoken");
+//בקובץ זה בסך הכל אני יוצר משתמש חדש - הרשמה של יוזר חדש 
+// שים לב שקראתי כאן לקובץ /models/User שמשם אני יקבל את האובייקט עם כל הפרטים שם משתמש סיסמה אימייל וכ'ו
 const User = require("../../models/User");
 // @route  POST api/users
 // @desc   Register user
@@ -26,20 +27,21 @@ router.post(
       return res.status(400).json({ errors: errors.array() });
     }
     const { name, email, password } = req.body;
-    try {
+    try 
+    {
       let user = await User.findOne({ email });
+            // See if user exists
       if (user) 
       {
         return res.status(400).json({ errors: [{ msg: "User already exists" }] });
       }
+            // Get users gravatar
       const avatar = gravatar.url(email, { s: "200", r: "pg", d: "mm" });
       user = new User({ name, email, avatar, password });
+            // Encrypt password
       const salt = await bcrypt.genSalt(10);
       user.password = await bcrypt.hash(password, salt);
       await user.save();
-      // See if user exists
-      // Get users gravatar
-      // Encrypt password
       const payload = { user: { id: user.id } };
       jwt.sign(
         payload,

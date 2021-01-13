@@ -80,3 +80,15 @@
 * @desc Get current users profile
 * @access Private
 * https://github.com/IgalNeeman/DevConnector/blob/master/routes/api/profile.js
+
+## 17. Create & Update Profile Routes
+* https://github.com/IgalNeeman/DevConnector/blob/master/routes/api/profile.js
+
+## 18. Get All Profiles & Profile By User ID
+* https://github.com/IgalNeeman/DevConnector/blob/master/routes/api/profile.js
+
+## 19. Delete Profile & User
+* https://github.com/IgalNeeman/DevConnector/blob/master/routes/api/profile.js
+
+## 20. Add Profile Experience
+* https://github.com/IgalNeeman/DevConnector/blob/master/routes/api/profile.js
