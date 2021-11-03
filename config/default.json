@@ -1,5 +1,5 @@
 {
-    "mongoURI": "mongodb+srv://igali123:igali123@devconnector-5xjmx.mongodb.net/test?retryWrites=true&w=majority",
+    "mongoURI": "mongodb+srv://igali123:igali123@devconnector.5xjmx.mongodb.net/DevConnector?retryWrites=true&w=majority",
     "jwtSecret": "mysecrettoken",
     "githubClientId": "433fca563695dc72ca8a",
     "githubSecret": "9e71727a57c134dae7298ef3d95304ed9cbfb822",
