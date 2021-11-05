@@ -1,6 +1,5 @@
 import React, { Fragment, useState } from 'react';
 import PropTypes from 'prop-types';
-import { UPDATE_PROFILE } from '../../actions/types';
 
 import { Link, withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
@@ -11,7 +10,7 @@ import { addExperince } from '../../actions/profile';
 // אחר כך קראנו ל רידוסר
 // יצרנו 2 קבצים ב PROFILE-FORM
 
-const AddExperience = ({addExperince,history}) => {
+const AddExperience = ({ addExperince, history }) => {
   const [formData, setFormData] = useState({
     company: '',
     title: '',
@@ -37,10 +36,13 @@ const AddExperience = ({addExperince,history}) => {
         positions that you have had in the past
       </p>
       <small>* = required field</small>
-      <form class='form' onSubmit={e=> {
+      <form
+        class='form'
+        onSubmit={(e) => {
           e.preventDefault();
-          addExperince(formData,history)
-      }} >
+          addExperince(formData, history);
+        }}
+      >
         <div class='form-group'>
           <input
             type='text'
@@ -115,9 +117,9 @@ const AddExperience = ({addExperince,history}) => {
           ></textarea>
         </div>
         <input type='submit' class='btn btn-primary my-1' />
-        <a class='btn btn-light my-1' href='dashboard.html'>
+        <Link class='btn btn-light my-1' to='/dashboard'>
           Go Back
-        </a>
+        </Link>
       </form>
     </Fragment>
   );
@@ -127,4 +129,4 @@ AddExperience.propTypes = {
   addExperince: PropTypes.func.isRequired,
 };
 
-export default connect(null, { addExperince })(AddExperience);
+export default connect(null, { addExperince })(withRouter(AddExperience));
